@@ -19,6 +19,7 @@ jobs:
     - name: Configure rclone
       run: |
         rclone config create cloudflare_r2 s3 \
+          provider = Cloudflare \
           env_auth=true \
           endpoint=${{ secrets.R2_ENDPOINT_URL }} \
           access_key_id=${{ secrets.CLOUDFLARE_ACCESS_KEY_ID }} \
@@ -27,4 +28,4 @@ jobs:
 
     - name: Sync files to Cloudflare R2
       run: |
-        rclone sync . cloudflare_r2:${{ secrets.R2_BUCKET_NAME }} --s3-storage-class=STANDARD  --exclude ".git/*" --exclude ".github/*"
+        rclone copy . cloudflare_r2:${{ secrets.R2_BUCKET_NAME }} --s3-storage-class=STANDARD  --exclude ".git/*" --exclude ".github/*"
