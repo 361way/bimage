@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="black"/>
+  
+  <!-- 坐标轴 -->
+  <line x1="50" y1="550" x2="750" y2="550" stroke="white" stroke-width="2"/>
+  
+  <!-- 数据点和连线 -->
+  <polyline 
+    points="
+      100,530 
+      250,520 
+      400,510 
+      550,400 
+      700,100"
+    fill="none" 
+    stroke="#90EE90" 
+    stroke-width="2"
+  />
+  
+  <!-- 数据点 -->
+  <circle cx="100" cy="530" r="5" fill="#90EE90"/>
+  <circle cx="250" cy="520" r="5" fill="#90EE90"/>
+  <circle cx="400" cy="510" r="5" fill="#90EE90"/>
+  <circle cx="550" cy="400" r="5" fill="#90EE90"/>
+  <circle cx="700" cy="100" r="5" fill="#90EE90"/>
+  
+  <!-- 年份标签 -->
+  <text x="100" y="570" fill="white" text-anchor="middle" font-size="14">2016</text>
+  <text x="250" y="570" fill="white" text-anchor="middle" font-size="14">2017</text>
+  <text x="400" y="570" fill="white" text-anchor="middle" font-size="14">2020</text>
+  <text x="550" y="570" fill="white" text-anchor="middle" font-size="14">2022</text>
+  <text x="700" y="570" fill="white" text-anchor="middle" font-size="14">2024</text>
+  
+  <!-- 数据点标签 -->
+  <text x="100" y="510" fill="white" text-anchor="middle" font-size="12">Pascal
+    <tspan x="100" y="525">19 TFLOPS</tspan>
+    <tspan x="100" y="540">FP16</tspan>
+  </text>
+  
+  <text x="250" y="500" fill="white" text-anchor="middle" font-size="12">Volta
+    <tspan x="250" y="515">130 TFLOPS</tspan>
+    <tspan x="250" y="530">FP16</tspan>
+  </text>
+  
+  <text x="400" y="490" fill="white" text-anchor="middle" font-size="12">Ampere
+    <tspan x="400" y="505">620 TFLOPS</tspan>
+    <tspan x="400" y="520">BF16/FP16</tspan>
+  </text>
+  
+  <text x="550" y="380" fill="white" text-anchor="middle" font-size="12">Hopper
+    <tspan x="550" y="395">4,000 TFLOPS</tspan>
+    <tspan x="550" y="410">FP8</tspan>
+  </text>
+  
+  <text x="700" y="80" fill="white" text-anchor="middle" font-size="12">Blackwell
+    <tspan x="700" y="95">20,000 TFLOPS</tspan>
+    <tspan x="700" y="110">FP4</tspan>
+  </text>
+  
+  <!-- 标题 -->
+  <text x="400" y="50" fill="white" text-anchor="middle" font-size="20" font-weight="bold">1000X AI Compute in 8 Years - by 361way.com</text>
+</svg>
